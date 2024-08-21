@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+:root {
+    --background-color: #2d487f; /* Default dark mode background */
+    --header-background-color: rgba(0, 0, 0, 0); /* Transparent header */
+    --metric-background-color: #1b263b;
+    --metric-text-color: #ffffff;
+    --box-shadow-color: rgba(0, 0, 0, 0.8);
+    --graph-background-color: rgb(25, 17, 94);
+    --text-color: #ffffff;
+    --font-family: 'New Amsterdam', regular;
+}
+
+[data-theme="light"] {
+    --background-color: #ffffff; /* Light mode background */
+    --header-background-color: rgba(255, 255, 255, 0.8); /* Light mode header */
+    --metric-background-color: #f0f0f0; /* Light mode cards */
+    --metric-text-color: black;
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+    --graph-background-color: #e9ecef;
+    --text-color: #ffffff;
+    --font-family: 'New Amsterdam', regular;
+}
+
+[data-testid="stMetricLabel"]{
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+/* temp, rpm, size, running hours cards */
+div.st-emotion-cache-12w0qpk.e1f1d6gn3,
+div.st-emotion-cache-1b2d4l5.e1f1d6gn3{
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 1px;
+    color: black;
+    box-shadow: 0px 4px 8px var(--box-shadow-color);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+/* Inner container of all graphs */
+div.plot-container.plotly {
+    background-color: var(--graph-background-color);
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: 0px 4px 8px var(--box-shadow-color);
+}
+
+/* Other adjustments */
+[data-testid="stHorizontalBlock"] > div[data-testid="column"] h3,
+[data-testid="stHorizontalBlock"] > div[data-testid="column"] div {
+    margin: 0;
+    padding: 0;
+}

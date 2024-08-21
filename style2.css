@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+:root{
+    --box-shadow-color: rgba(0, 0, 0, 0.8);
+}
+
+[data-testid="stAppViewContainer"] {
+    background-color: #141922; /* Default dark mode background */
+}
+
+[data-testid="stHeader"] {
+    background-color: #141922; /* Default dark mode background */
+}
+
+[data-testid="stMetricLabel"] {
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: White; /* Use variable */
+}
+
+/* temp, rpm, size, running hours cards */
+div.st-emotion-cache-12w0qpk.e1f1d6gn3,
+div.st-emotion-cache-1b2d4l5.e1f1d6gn3{
+    background-color: #142139; /* Use variable */
+    border-radius: 15px;
+    padding: 5px;
+    margin: 1px;
+    color: white; /* Use variable */
+    box-shadow: 0px 4px 8px var(--box-shadow-color); /* Use variable */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+/* Inner container of all graphs */
+div.plot-container.plotly {
+    background-color: var(--graph-background-color);
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: 0px 4px 8px var(--box-shadow-color);
+}
+
+/* Other adjustments */
+[data-testid="stHorizontalBlock"] > div[data-testid="column"] h3,
+[data-testid="stHorizontalBlock"] > div[data-testid="column"] div {
+    margin: 0;
+    padding: 0;
+}
